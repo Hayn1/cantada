@@ -21,17 +21,19 @@
         img {
             margin-bottom: 100px;
         }
-
-        #dale{
+        
+        #dale {
             font-size: 76px;
         }
-
+        
         .yes {
             cursor: pointer;
             padding: 30px;
-            background: grey;
-            color: red;
+            background-color: #add8e6;
+            color: black;
             font-size: 30px;
+            border: 1px solid #add8e6;
+            border-radius: 60px;
         }
     </style>
 </head>
@@ -56,44 +58,39 @@
 
 
     <script type="text/javascript">
-        function yes(){
+        function yes() {
             alert("VAMOOOOSSSSSS");
             document.getElementById("dale").innerHTML = "<h1>Chama no direct</h1>"
         }
 
         let flag = 1
-        
+
         let Btn = document.getElementById("Btn")
-        
-        function no(){
+
+        function no() {
             console.log(flag)
-            if(flag == 1){
+            if (flag == 1) {
                 Btn.style.top = "364px"
                 Btn.style.top = "300px"
-                flag=2
-            }
-            else if(flag==2){
+                flag = 2
+            } else if (flag == 2) {
                 Btn.style.top = "400px"
                 Btn.style.left = "200px"
-                flag=3
-            }
-            else if(flag==3){
+                flag = 3
+            } else if (flag == 3) {
                 Btn.style.top = "650px"
                 Btn.style.left = "430px"
-                flag=4
-            }
-            else if(flag==4){
+                flag = 4
+            } else if (flag == 4) {
                 Btn.style.top = "970px"
                 Btn.style.left = "840px"
-                flag=5
-            }
-            else if(flag==5){
+                flag = 5
+            } else if (flag == 5) {
                 Btn.style.top = "200px"
                 Btn.style.left = "300px"
-                flag=1
+                flag = 1
             }
         }
-
     </script>
 </body>
 
